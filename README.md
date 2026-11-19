@@ -80,6 +80,18 @@ SIRAY_API_TOKEN=your_api_key_here
 npm run dev
 ```
 
+### Run with Docker Compose
+
+Install Docker with the Compose plugin, then configure the API token:
+
+```bash
+cp .env.example .env
+# Set SIRAY_API_TOKEN in .env
+docker compose up --build
+```
+
+Open [http://localhost:3000](http://localhost:3000). Stop the app with `Ctrl+C`.
+
 ---
 
 ## Project Structure

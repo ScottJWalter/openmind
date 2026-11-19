@@ -1,0 +1,8 @@
+services:
+  openmind:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    environment:
+      SIRAY_API_TOKEN: ${SIRAY_API_TOKEN:?Set SIRAY_API_TOKEN in .env or the environment}
